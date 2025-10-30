@@ -114,7 +114,7 @@ Cada pasta representa uma implementação distinta de lista encadeada, com suas 
 
 Assista à execução completa do projeto no vídeo abaixo:
 
-🔗 **Link do vídeo:** [Adicione aqui o link do vídeo no YouTube, Google Drive ou outra plataforma]
+🔗 **Link do vídeo:** https://youtu.be/kpEdIRsv290?si=WUfXU_BcO1uT_bdi
 
 ---
 
