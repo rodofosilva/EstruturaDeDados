@@ -1,83 +1,123 @@
-# Estrutura de Dados - Listas em Java
+# 🧩 Estrutura de Dados em Java
 
-Este projeto implementa três tipos de **listas encadeadas** em Java:
-
-1. **Lista Simplesmente Encadeada** (`ListaSimples`)
-2. **Lista Duplamente Encadeada** (`ListaDupla`)
-3. **Lista Circular** (`ListaCircular`)
-
-Cada implementação inclui operações básicas como **inserção**, **busca**, **remoção** e **exibição** dos elementos.
+Este projeto foi desenvolvido para a disciplina de **Estrutura de Dados**, com o objetivo de implementar e testar diferentes tipos de **listas encadeadas** em Java.
 
 ---
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
+
+```
 EstruturaDeDados/
+│
 ├── ListaSimples/
+│   ├── Node.java
 │   ├── ListaSimples.java
 │   └── Main.java
+│
 ├── ListaDupla/
+│   ├── Node.java
 │   ├── ListaDupla.java
 │   └── Main.java
-├── ListaCircular/
-│   ├── ListaCircular.java
-│   └── Main.java
-└── Node.java
-text> Todos os pacotes utilizam a mesma classe `Node.java` localizada na raiz do projeto.
+│
+└── ListaCircular/
+    ├── Node.java
+    ├── ListaCircular.java
+    └── Main.java
+```
+
+Cada pasta representa uma implementação distinta de lista encadeada, com suas respectivas classes de nó e classe principal de execução.
 
 ---
 
-## Classe `Node.java`
+## ⚙️ Estruturas Implementadas
 
-```java
-public class Node {
-    int valor;
-    Node proximo;
-    Node anterior; // Usado apenas na ListaDupla
+### 🔹 Lista Simples
 
-    public Node(int valor) {
-        this.valor = valor;
-        this.proximo = null;
-        this.anterior = null;
-    }
-}
+* Cada nó armazena um valor e uma referência para o próximo nó.
+* Operações:
 
-Funcionalidades por Tipo de Lista
+  * Inserir no início/fim
+  * Remover elemento
+  * Buscar elemento
+  * Exibir a lista
 
+### 🔹 Lista Duplamente Encadeada
 
-OperaçãoLista SimplesLista DuplaLista CircularInserir no início✅✅Inserir no fim✅✅✅Buscar elemento✅✅✅Remover elemento✅✅✅Exibir lista✅✅ (frente e reverso)✅ (circular)Tratamento de casos especiais✅✅✅
+* Cada nó tem referências tanto para o próximo quanto para o anterior.
+* Operações:
 
-Exemplos de Saída (Main)
-textLista (fim -> início): 25 15 
-Lista (início -> fim): 5 25 
-Buscar 15: true
-Lista (início -> fim): 5 25
+  * Inserção e remoção nos dois extremos
+  * Busca de elementos
+  * Percorrimento nos dois sentidos (início → fim e fim → início)
 
-Como Executar
+### 🔹 Lista Circular
 
-Certifique-se de ter o JDK instalado.
-Compile e execute um dos arquivos Main.java:
-bashjavac ListaSimples/Main.java Node.java
-java ListaSimples.Main
+* O último nó aponta de volta para o primeiro.
+* Permite percorrer os elementos de forma cíclica.
+* Operações:
 
-Repita para os outros tipos de lista:
-bashjava ListaDupla.Main
-java ListaCircular.Main
+  * Inserção e remoção
+  * Exibição contínua dos elementos
 
+---
 
+## ▶️ Como Executar no VS Code
 
-O projeto foi testado no VS Code com extensão Java.
+1. **Abra o projeto no VS Code**
 
+   * Menu: `Arquivo > Abrir Pasta` → selecione `EstruturaDeDados`.
 
-Objetivo Educacional
-Este projeto foi desenvolvido para fins de aprendizado de estruturas de dados, demonstrando:
+2. **Verifique se o Java está instalado**
 
-Gerenciamento manual de ponteiros (proximo, anterior)
-Tratamento de casos especiais (lista vazia, remoção de início/fim)
-Percorrimento em ambas as direções (duplamente encadeada)
-Comportamento cíclico (lista circular)
+   ```bash
+   java -version
+   ```
 
+   O projeto foi testado com **JDK 24**.
 
-Autor
-Seu Nome: Rodofo Dheymison Ferreira Silva
-Disciplina: Estrutura de Dados
-Professor: [Anderson Soares ]
+3. **Compile os arquivos**
+
+   * Exemplo (para a lista dupla):
+
+     ```bash
+     javac ListaDupla/*.java
+     ```
+
+4. **Execute o programa**
+
+   ```bash
+   java ListaDupla.Main
+   ```
+
+5. **Saída esperada (exemplo):**
+
+   ```
+   Lista (início -> fim): 5 15 25
+   Lista (fim -> início): 25 15 5
+   Buscar 15: true
+   Lista (início -> fim): 5 25
+   ```
+
+---
+
+## 🧠 Conceitos Aplicados
+
+* Encapsulamento
+* Estruturas dinâmicas de dados
+* Manipulação de ponteiros (referências)
+* Modularização por pacotes
+* Boas práticas de programação
+
+---
+
+## 🎥 Demonstração em Vídeo
+
+Assista à execução completa do projeto no vídeo abaixo:
+
+🔗 **Link do vídeo:** [Adicione aqui o link do vídeo no YouTube, Google Drive ou outra plataforma]
+
+---
+
+## 👨‍💻 Autor: Rodofo Dheymison
+Professor: Anderson Soares
+disciplina de Estrutura de Dados
