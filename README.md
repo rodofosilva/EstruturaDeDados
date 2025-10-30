@@ -119,5 +119,5 @@ Assista à execução completa do projeto no vídeo abaixo:
 ---
 
 ## 👨‍💻 Autor: Rodofo Dheymison
-Professor: Anderson Soares
+Professor: Anderson Soares: 
 disciplina de Estrutura de Dados
